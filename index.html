@@ -13,21 +13,22 @@
     <style>
         /* Core Variables */
         :root {
-            --primary-dark: #3C3B6E; /* Old Glory Blue */
+            --primary-dark: #003366; /* Navy Blue */
             --primary-light: #FFFFFF; /* Crisp White */
-            --accent-red: #B22234; /* Old Glory Red */
+            --accent-red: #FF2400; /* Scarlet Red */
+            --accent-blue: #4169E1; /* Royal Blue */
             --accent-gray: #F5F5F5; /* Light Gray */
-            --accent-glow: rgba(178, 34, 52, 0.6); /* Old Glory Red glow */
-            --text-primary: #0A192F; /* Dark Navy */
+            --accent-glow: rgba(255, 36, 0, 0.6); /* Scarlet Red glow */
+            --text-primary: #0a192f; /* Dark Navy */
             --text-secondary: rgba(255, 255, 255, 0.7); /* Light Gray */
-            --matrix-color: rgba(178, 34, 52, 0.25); /* Old Glory Red */
-            --matrix-glow: rgba(178, 34, 52, 0.6); /* Old Glory Red glow */
+            --matrix-color: rgba(255, 36, 0, 0.25); /* Scarlet Red */
+            --matrix-glow: rgba(255, 36, 0, 0.6); /* Scarlet Red glow */
             --transition-standard: all 0.3s ease;
-            --infographic-bg: rgba(178, 34, 52, 0.3); /* Old Glory Red */
+            --infographic-bg: rgba(255, 36, 0, 0.3); /* Scarlet Red */
             --code-white: #FFFFFF;
-            --code-red: #B22234; /* Old Glory Red */
-            --code-blue: #3C3B6E; /* Old Glory Blue */
-            --faint-text: rgba(255, 255, 255, 0.4); /* Crisp White with transparency */
+            --code-red: #FF2400; /* Scarlet Red */
+            --code-blue: #4169E1; /* Royal Blue */
+            --faint-text: rgba(255, 255, 255, 0.4); /* Soft White with transparency */
         }
 
         /* Reset and Base Styles */
@@ -68,7 +69,7 @@
         }
 
         .github-icon:hover {
-            color: var(--accent-red); /* Old Glory Red */
+            color: var(--accent-red); /* Scarlet Red */
             transform: scale(1.2);
         }
 
@@ -112,7 +113,7 @@
         }
 
         .nav-links li a:hover {
-            color: var(--accent-red); /* Old Glory Red */
+            color: var(--accent-blue); /* Royal Blue */
         }
 
         /* Dropdown Menu Styles for Mobile and Desktop */
@@ -201,7 +202,7 @@
             background: radial-gradient(
                 circle at center,
                 var(--accent-glow) 0%,
-                rgba(178, 34, 52, 0.15) 30%,
+                rgba(255, 36, 0, 0.15) 30%,
                 transparent 70%
             );
             animation: ripple 6s infinite;
@@ -247,7 +248,7 @@
             background: linear-gradient(
                 0deg,
                 transparent,
-                rgba(178, 34, 52, 0.2) 50%,
+                rgba(255, 36, 0, 0.2) 50%,
                 transparent
             );
             background-size: 100% 200%;
@@ -344,8 +345,8 @@
             position: absolute;
             inset: 0;
             background: 
-                radial-gradient(circle at 20% 50%, rgba(178, 34, 52, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 80% 50%, rgba(178, 34, 52, 0.1) 0%, transparent 50%);
+                radial-gradient(circle at 20% 50%, rgba(255, 36, 0, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(255, 36, 0, 0.1) 0%, transparent 50%);
             animation: glowPulse 8s ease-in-out infinite;
         }
 
@@ -367,7 +368,7 @@
 
         .subtitle {
             font-size: 1.5rem;
-            color: var(--accent-red); /* Old Glory Red */
+            color: var(--accent-blue); /* Royal Blue */
             margin-bottom: 2rem;
             opacity: 0;
         }
@@ -385,7 +386,7 @@
         }
 
         .skill-icon {
-            background: rgba(255, 255, 255, 0.1); /* Crisp White with transparency */
+            background: rgba(255, 255, 255, 0.1); /* Soft White with transparency */
             border-radius: 8px;
             padding: 0.8rem;
             display: flex;
@@ -411,8 +412,8 @@
 
         /* All-American Theme Section */
         .dark-theme-section {
-            /* Updated background to an American flag-inspired gradient */
-            background: linear-gradient(135deg, var(--accent-red) 0%, var(--accent-blue) 50%, var(--accent-red) 100%);
+            /* Updated background to a patriotic blue gradient */
+            background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-red) 50%, var(--accent-blue) 100%);
             position: relative;
             overflow: hidden;
         }
@@ -425,16 +426,16 @@
             padding: 2rem !important;
             background: linear-gradient(
                 135deg,
-                rgba(178, 34, 52, 0.95) 0%, /* Old Glory Red with opacity */
-                rgba(60, 59, 110, 0.85) 50%, /* Old Glory Blue */
-                rgba(178, 34, 52, 0.95) 100% /* Old Glory Red with opacity */
+                rgba(65, 105, 225, 0.95) 0%, /* Royal Blue with opacity */
+                rgba(255, 36, 0, 0.85) 50%, /* Scarlet Red */
+                rgba(65, 105, 225, 0.95) 100% /* Royal Blue with opacity */
             ) !important;
             border: 2px solid transparent !important; /* Transparent gradient border */
             box-shadow: 
                 0 0 40px rgba(0, 0, 0, 0.4),
-                inset 0 0 40px rgba(0, 0, 0, 0.08),
-                0 0 30px rgba(178, 34, 52, 0.5),
-                0 0 60px rgba(178, 34, 52, 0.5) !important; /* Using --accent-glow */
+                inset 0 0 40px rgba(255, 36, 0, 0.08),
+                0 0 30px rgba(255, 36, 0, 0.5),
+                0 0 60px rgba(255, 36, 0, 0.5) !important; /* Using --accent-glow */
             overflow: hidden;
             backdrop-filter: blur(15px); /* Enhanced glass effect */
             transform-style: preserve-3d;
@@ -452,10 +453,10 @@
             bottom: -10px;
             border: 2px solid transparent;
             border-radius: 15px;
-            background: linear-gradient(45deg, var(--accent-red), var(--accent-blue), var(--accent-red), var(--accent-blue)); /* Old Glory Red & Blue Gradient */
+            background: linear-gradient(45deg, var(--accent-blue), var(--accent-red), var(--accent-blue), var(--accent-red)); /* Royal Blue and Scarlet Red Gradient */
             background-size: 400% 400%;
             animation: gradientAnimation 15s ease infinite; /* Animated gradient */
-            box-shadow: 0 0 20px rgba(178, 34, 52, 0.5), 0 0 40px rgba(178, 34, 52, 0.5);
+            box-shadow: 0 0 20px rgba(255, 36, 0, 0.5), 0 0 40px rgba(255, 36, 0, 0.5);
         }
 
         /* Gradient Animation Keyframes */
@@ -473,12 +474,12 @@
             right: 0;
             bottom: 0;
             background-image: 
-                linear-gradient(var(--accent-red) 1px, transparent 1px),
-                linear-gradient(90deg, var(--accent-red) 1px, transparent 1px);
+                linear-gradient(rgba(255, 36, 0, 0.15) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 36, 0, 0.15) 1px, transparent 1px);
             background-size: 30px 30px;
             opacity: 0.2;
             animation: gridMove 15s infinite ease-in-out;
-            pointer-events: none; /* Prevents accidental clicks */
+            pointer-events: none;
             z-index: 1;
         }
 
@@ -508,7 +509,7 @@
             object-fit: cover;
             box-shadow: 
                 0 10px 25px rgba(0, 0, 0, 0.3),
-                0 0 0 1px rgba(255, 255, 255, 0.3);
+                0 0 0 1px rgba(255, 36, 0, 0.3);
             transform: rotate(-3deg);
             transition: all 0.5s ease;
             position: relative;
@@ -524,8 +525,8 @@
             transform: rotate(0deg) scale(1.02);
             box-shadow: 
                 0 15px 35px rgba(0, 0, 0, 0.4),
-                0 0 0 2px rgba(178, 34, 52, 0.5),
-                0 0 30px rgba(178, 34, 52, 0.3);
+                0 0 0 2px rgba(255, 36, 0, 0.5),
+                0 0 30px rgba(255, 36, 0, 0.3);
         }
 
         .about-profile-img::before {
@@ -535,7 +536,7 @@
             background: linear-gradient(
                 125deg,
                 transparent 0%,
-                rgba(178, 34, 52, 0.3) 40%,
+                rgba(255, 36, 0, 0.3) 40%,
                 rgba(255, 255, 255, 0.6) 60%,
                 transparent 100%
             );
@@ -551,7 +552,7 @@
             background: repeating-linear-gradient(
                 90deg,
                 transparent,
-                rgba(178, 34, 52, 0.1) 1px,
+                rgba(255, 36, 0, 0.1) 1px,
                 transparent 2px
             );
             animation: scanlines 8s linear infinite;
@@ -563,9 +564,9 @@
             position: absolute;
             bottom: -15px; /* Moved down by 15px */
             left: calc(50% - 40px); /* Center horizontally relative to profile image */
-            background: rgba(178, 34, 52, 0.2); /* Slightly transparent Old Glory Red */
+            background: rgba(255, 255, 255, 0.2); /* Very transparent white */
             border: none;
-            color: rgba(255, 255, 255, 0.8); /* Crisp White with transparency */
+            color: rgba(255, 255, 255, 0.8); /* Soft White with transparency */
             padding: 8px 16px;
             border-radius: 5px;
             font-size: 0.9rem;
@@ -594,7 +595,7 @@
             transform: translate(-300px, -50%);
             width: 280px; /* Slightly narrower for better fit */
             height: 200px; /* Fixed height for cycling */
-            background: rgba(60, 59, 110, 0.5); /* Old Glory Blue */
+            background: rgba(0, 0, 128, 0.5); /* Navy Blue background */
             border: none; /* Removed the light blue border */
             border-radius: 8px;
             padding: 1rem; /* Reduced padding */
@@ -615,10 +616,11 @@
             bottom: -10px;
             border: 2px solid transparent;
             border-radius: 15px;
-            background: linear-gradient(45deg, var(--accent-red), var(--accent-blue), var(--accent-red), var(--accent-blue)); /* Old Glory Red & Blue Gradient */
+            background: linear-gradient(45deg, var(--accent-blue), var(--accent-red), var(--accent-blue), var(--accent-red)); /* Royal Blue and Scarlet Red Gradient */
             background-size: 400% 400%;
             animation: gradientAnimationInfographic 15s ease infinite; /* Animated gradient */
-            box-shadow: 0 0 20px rgba(178, 34, 52, 0.5), 0 0 40px rgba(178, 34, 52, 0.5);
+            box-shadow: 0 0 20px rgba(255, 36, 0, 0.5), 0 0 40px rgba(255, 36, 0, 0.5); /* Matching box-shadow */
+            z-index: -1;
         }
 
         .profile-stats-overlay:hover {
@@ -640,10 +642,10 @@
         /* Profile Stat Paragraph */
         .stat-paragraph {
             width: 100%;
-            color: rgba(255, 255, 255, 0.8); /* Crisp White with transparency */
+            color: rgba(255, 255, 255, 0.8); /* Soft White with transparency */
             text-shadow: 
-                0 0 3px rgba(178, 34, 52, 0.8),
-                0 0 6px rgba(178, 34, 52, 0.5);
+                0 0 3px rgba(255, 36, 0, 0.8),
+                0 0 6px rgba(255, 36, 0, 0.5);
             font-weight: 500;
             letter-spacing: 0.5px;
             font-family: 'Courier New', monospace;
@@ -673,17 +675,17 @@
             position: relative;
             z-index: 3;
             background: rgba(0, 29, 60, 0.4);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 36, 0, 0.1);
             padding: 1.5rem;
             border-radius: 15px;
             box-shadow: 
-                inset 0 0 40px rgba(255, 255, 255, 0.08),
+                inset 0 0 40px rgba(255, 36, 0, 0.08),
                 0 0 30px rgba(0, 0, 0, 0.15);
             margin-top: 1rem;
         }
 
         .about-content p {
-            color: rgba(255, 255, 255, 0.9); /* Crisp White */
+            color: rgba(255, 255, 255, 0.9); /* Soft White */
             font-size: 1.15rem;
             line-height: 2;
             text-align: justify;
@@ -695,9 +697,9 @@
         }
 
         .about-content p:hover {
-            text-shadow: 0 0 8px rgba(178, 34, 52, 0.8);
+            text-shadow: 0 0 8px rgba(255, 36, 0, 0.8);
             letter-spacing: 0.2px;
-            background: rgba(178, 34, 52, 0.05);
+            background: rgba(255, 36, 0, 0.05);
             transform: scale(1.01);
         }
 
@@ -712,7 +714,7 @@
             display: none; /* Hidden initially */
             margin-top: 1rem;
             padding: 10px 20px;
-            background: rgba(178, 34, 52, 0.9); /* Old Glory Red with opacity */
+            background: rgba(255, 36, 0, 0.9); /* Scarlet Red with opacity */
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -723,7 +725,7 @@
         }
 
         .want-know-more-btn:hover {
-            background: rgba(60, 59, 110, 0.95); /* Old Glory Blue on hover */
+            background: rgba(65, 105, 225, 0.95); /* Royal Blue on hover */
             transform: translateY(-2px);
             box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
         }
@@ -785,13 +787,13 @@
         @keyframes titlePulse {
             0% {
                 text-shadow: 
-                    0 0 10px rgba(178, 34, 52, 0.3),
-                    0 0 20px rgba(178, 34, 52, 0.2);
+                    0 0 10px rgba(255, 36, 0, 0.3),
+                    0 0 20px rgba(255, 36, 0, 0.2);
             }
             100% {
                 text-shadow: 
-                    0 0 15px rgba(178, 34, 52, 0.5),
-                    0 0 30px rgba(178, 34, 52, 0.3);
+                    0 0 15px rgba(255, 36, 0, 0.5),
+                    0 0 30px rgba(255, 36, 0, 0.3);
             }
         }
 
@@ -800,81 +802,248 @@
             50% { opacity: 1; }
         }
 
-        /* Infographics Typing and Cycling */
-        /* Removed redundant keyframes */
+        @keyframes gradientAnimationInfographic {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
 
-        /* Added Styles for Random Japanese Characters */
-        .random-char {
+        /* Infographics Cycling Animation */
+        .infographic {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            z-index: 1; /* Behind the content */
+            background: var(--infographic-bg); /* Background */
+            border-radius: 10px; /* Border radius */
+            padding: 1rem; /* Inner spacing */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Animated Gradient Background for Infographic */
+        .infographic::before {
+            content: '';
             position: absolute;
-            font-size: 1.2rem;
-            opacity: 0;
-            pointer-events: none;
-            user-select: none;
-            animation: fadeInOut 2s forwards;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            border: 2px solid transparent;
+            border-radius: 15px;
+            background: linear-gradient(45deg, var(--accent-blue), var(--accent-red), var(--accent-blue), var(--accent-red)); /* Royal Blue and Scarlet Red Gradient */
+            background-size: 400% 400%;
+            animation: gradientAnimationInfographic 15s ease infinite; /* Animated gradient */
+            box-shadow: 0 0 20px rgba(255, 36, 0, 0.5), 0 0 40px rgba(255, 36, 0, 0.5);
         }
 
-        .random-char.white {
-            color: var(--code-white);
-        }
-
-        .random-char.red {
-            color: var(--code-red);
-        }
-
-        .random-char.blue {
-            color: var(--code-blue);
-        }
-
-        @keyframes fadeInOut {
-            0% { opacity: 0; transform: translateY(0); }
-            10% { opacity: 1; }
-            90% { opacity: 1; }
-            100% { opacity: 0; transform: translateY(-20px); }
-        }
-
-        /* Added Styles for Invisible Profile Trigger */
-        #profile-trigger {
+        .infographic-item {
             position: absolute;
+            width: 100%;
+            height: 100%;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 300px; /* Adjust height as needed */
-            /* Make it invisible */
-            background: transparent;
-            pointer-events: none;
-            z-index: 5; /* Above other elements */
+            box-sizing: border-box;
+            display: flex; /* Always display flex */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
         }
 
-        /* Responsive Adjustments for Profile Hover Button */
-        @media (max-width: 768px) {
-            .profile-hover-button {
-                display: none; /* Hide the stats button on mobile */
-            }
-
-            .profile-stats-overlay {
-                display: none;
-            }
+        .infographic-item.active {
+            opacity: 1;
         }
 
-        /* Want to Know More Button Styles */
-        .want-know-more-btn {
-            display: none; /* Hidden initially */
-            margin-top: 1rem;
-            padding: 10px 20px;
-            background: rgba(178, 34, 52, 0.9); /* Old Glory Red with opacity */
+        .infographic-item h4 {
+            margin-bottom: 0.5rem;
             color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s ease, transform 0.3s ease;
-            font-size: 1rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            text-shadow: 0 0 10px rgba(255, 36, 0, 0.5);
+            text-align: center;
+            width: 100%;
+            font-size: 1.5rem;
+            position: relative;
+            border: none; /* No border */
         }
 
-        .want-know-more-btn:hover {
-            background: rgba(60, 59, 110, 0.95); /* Old Glory Blue on hover */
+        .infographic-item p {
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            font-size: 1rem;
+            width: 100%;
+            position: relative;
+            max-height: 120px; /* Ensures text stays within box */
+            overflow: hidden;
+        }
+
+        /* Typing Effect */
+        .typing-text {
+            position: relative;
+            white-space: normal; /* Allow text wrapping */
+            word-wrap: break-word;
+            overflow: hidden;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            font-size: 0.9rem; /* Reduced font size */
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 4rem 0;
+            opacity: 0;
+            transform: translateY(30px);
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Card Styling */
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 
+                0 10px 30px rgba(0, 0, 0, 0.3),
+                0 0 20px rgba(255, 60, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 
+                0 15px 40px rgba(0, 0, 0, 0.4),
+                0 0 30px rgba(255, 60, 0, 0.3);
+        }
+
+        .card h3 {
+            color: var(--accent-red); /* Scarlet Red */
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            position: relative;
+            display: inline-block;
+            text-shadow: 0 0 15px rgba(255, 36, 0, 0.3);
+            /* Removed the ::after pseudo-element */
+        }
+
+        /* Projects Grid */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: rgba(20, 30, 50, 0.95);
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 60, 0, 0.2);
+            backdrop-filter: blur(5px);
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 36, 0, 0.2),
+                transparent
+            );
+            transition: 0.5s;
+        }
+
+        .project-card:hover::before {
+            left: 100%;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 
+                0 10px 25px rgba(0, 0, 0, 0.3),
+                0 0 20px rgba(255, 36, 0, 0.2);
+        }
+
+        .project-card h4 {
+            color: #fff;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 10px rgba(255, 36, 0, 0.3);
+            border: none; /* No border */
+        }
+
+        .project-card p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1rem;
+        }
+
+        /* Connect Section */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            padding: 1rem;
+            background: rgba(20, 30, 50, 0.9);
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 60, 0, 0.2);
+        }
+
+        .social-link {
+            position: relative;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-decoration: none;
+            padding: 10px 20px;
+            background: rgba(255, 60, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .social-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 60, 0, 0.2),
+                transparent
+            );
+            transition: 0.5s;
+        }
+
+        .social-link:hover::before {
+            left: 100%;
+        }
+
+        .social-link:hover {
+            background: rgba(255, 60, 0, 0.2);
             transform: translateY(-2px);
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 5px 15px rgba(255, 60, 0, 0.2);
         }
 
         /* Responsive Design */
@@ -1133,7 +1302,7 @@
             }
 
             .social-link {
-                background: rgba(178, 34, 52, 0.15);
+                background: rgba(255, 60, 0, 0.15);
             }
         }
 
@@ -1214,7 +1383,7 @@
             display: none; /* Hidden initially */
             margin-top: 1rem;
             padding: 10px 20px;
-            background: rgba(178, 34, 52, 0.9); /* Old Glory Red with opacity */
+            background: rgba(255, 36, 0, 0.9); /* Scarlet Red with opacity */
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -1225,7 +1394,7 @@
         }
 
         .want-know-more-btn:hover {
-            background: rgba(60, 59, 110, 0.95); /* Old Glory Blue on hover */
+            background: rgba(65, 105, 225, 0.95); /* Royal Blue on hover */
             transform: translateY(-2px);
             box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
         }
@@ -1287,13 +1456,13 @@
         @keyframes titlePulse {
             0% {
                 text-shadow: 
-                    0 0 10px rgba(178, 34, 52, 0.3),
-                    0 0 20px rgba(178, 34, 52, 0.2);
+                    0 0 10px rgba(255, 36, 0, 0.3),
+                    0 0 20px rgba(255, 36, 0, 0.2);
             }
             100% {
                 text-shadow: 
-                    0 0 15px rgba(178, 34, 52, 0.5),
-                    0 0 30px rgba(178, 34, 52, 0.3);
+                    0 0 15px rgba(255, 36, 0, 0.5),
+                    0 0 30px rgba(255, 36, 0, 0.3);
             }
         }
 
@@ -1501,505 +1670,506 @@
                 </div>
             </section>
         </div>
+    </div>
 
-        <script>
-            // Initialize GSAP ScrollTrigger and TextPlugin
-            gsap.registerPlugin(ScrollTrigger, TextPlugin);
+    <script>
+        // Initialize GSAP ScrollTrigger and TextPlugin
+        gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
-            // Matrix Effect Functions
-            function createMatrixBackground() {
-                const containers = document.querySelectorAll('.matrix-background');
-                containers.forEach(container => {
-                    const containerWidth = container.offsetWidth;
-                    const columnWidth = 30; // Increased width for fewer columns
-                    const numberOfColumns = Math.ceil(containerWidth / columnWidth);
-
-                    const chars = '守らリケーシタアプョン01{}#$@987';
-
-                    container.innerHTML = ''; // Clear existing columns
-
-                    for(let i = 0; i < numberOfColumns; i++) {
-                        const column = document.createElement('div');
-                        column.className = 'matrix-column';
-                        
-                        // Create random string of characters
-                        let columnChars = '';
-                        for(let j = 0; j < 100; j++) { // Increased from 50 to 100
-                            columnChars += chars[Math.floor(Math.random() * chars.length)] + '\n';
-                        }
-
-                        column.textContent = columnChars;
-                        column.style.left = `${i * columnWidth}px`;
-                        column.style.animationDelay = `${-Math.random() * 20}s`;
-
-                        container.appendChild(column);
-                    }
-                });
-            }
-
-            // Anime Effect Functions
-            function createAnimeBackground() {
-                const container = document.querySelector('.anime-background');
+        // Matrix Effect Functions
+        function createMatrixBackground() {
+            const containers = document.querySelectorAll('.matrix-background');
+            containers.forEach(container => {
                 const containerWidth = container.offsetWidth;
-                const columnWidth = 40;
+                const columnWidth = 30; // Increased width for fewer columns
                 const numberOfColumns = Math.ceil(containerWidth / columnWidth);
-                
-                // Anime characters pool
+
                 const chars = '守らリケーシタアプョン01{}#$@987';
-                
-                // Create columns
+
+                container.innerHTML = ''; // Clear existing columns
+
                 for(let i = 0; i < numberOfColumns; i++) {
                     const column = document.createElement('div');
-                    column.className = 'anime-column';
+                    column.className = 'matrix-column';
                     
+                    // Create random string of characters
                     let columnChars = '';
-                    for(let j = 0; j < 100; j++) {
+                    for(let j = 0; j < 100; j++) { // Increased from 50 to 100
                         columnChars += chars[Math.floor(Math.random() * chars.length)] + '\n';
                     }
-                    
+
                     column.textContent = columnChars;
                     column.style.left = `${i * columnWidth}px`;
                     column.style.animationDelay = `${-Math.random() * 20}s`;
-                    
-                    // Randomly add glow effect
-                    if (Math.random() < 0.3) {
-                        column.classList.add('glow');
-                    }
-                    
+
                     container.appendChild(column);
                 }
+            });
+        }
+
+        // Anime Effect Functions
+        function createAnimeBackground() {
+            const container = document.querySelector('.anime-background');
+            const containerWidth = container.offsetWidth;
+            const columnWidth = 40;
+            const numberOfColumns = Math.ceil(containerWidth / columnWidth);
+            
+            // Anime characters pool
+            const chars = '守らリケーシタアプョン01{}#$@987';
+            
+            // Create columns
+            for(let i = 0; i < numberOfColumns; i++) {
+                const column = document.createElement('div');
+                column.className = 'anime-column';
+                
+                let columnChars = '';
+                for(let j = 0; j < 100; j++) {
+                    columnChars += chars[Math.floor(Math.random() * chars.length)] + '\n';
+                }
+                
+                column.textContent = columnChars;
+                column.style.left = `${i * columnWidth}px`;
+                column.style.animationDelay = `${-Math.random() * 20}s`;
+                
+                // Randomly add glow effect
+                if (Math.random() < 0.3) {
+                    column.classList.add('glow');
+                }
+                
+                container.appendChild(column);
             }
+        }
 
-            // Profile Stats Functions
-            let isCyclingStats = false; // Flag to prevent multiple cycles
+        // Profile Stats Functions
+        let isCyclingStats = false; // Flag to prevent multiple cycles
 
-            function initializeProfileStats() {
-                const statsData = [
-                    "Proficient in creating visually stunning graphics with a 95% client satisfaction rate, ensuring projects are delivered on time and exceed expectations.",
-                    "Expert in development operations, improving workflow efficiency by 80% through innovative solutions and automation.",
-                    "Specialized in game development with a 90% success rate in asset creation, enhancing user engagement and experience.",
-                    "Skilled in asset creation and multimedia production, contributing to a 100% increase in project scalability and flexibility."
-                ];
-                
-                const cycler = document.querySelector('.profile-stats-overlay .stats-cycler');
-                const paragraphs = cycler.querySelectorAll('.stat-paragraph');
-                let currentStatIndex = 0;
-                const totalStats = statsData.length;
-
-                // Function to type text into an element using GSAP TextPlugin
-                function typeText(element, text, speed = 0.05) { // Speed adjusted for fast typing
-                    return gsap.to(element, {
-                        duration: text.length * speed,
-                        text: text,
-                        ease: "none",
-                        onStart: () => {
-                            element.parentElement.classList.add('active');
-                        }
-                    });
-                }
-
-                // Function to cycle through stats sequentially
-                function cycleStats() {
-                    if (isCyclingStats) return; // Prevent multiple cycles
-                    isCyclingStats = true;
-
-                    const timeline = gsap.timeline({ repeat: -1 });
-
-                    statsData.forEach((text, index) => {
-                        const currentParagraph = paragraphs[index % paragraphs.length];
-                        timeline.call(() => {
-                            typeText(currentParagraph.querySelector('p'), text, 0.05);
-                        }, null, `+=0.5`); // Delay before starting each paragraph
-                        timeline.to({}, { duration: text.length * 0.05 + 1.5 }); // Wait for typing and display duration
-                        timeline.call(() => {
-                            currentParagraph.classList.remove('active');
-                            currentParagraph.querySelector('p').textContent = '';
-                        }, null);
-                    });
-
-                    // Repeat the cycle infinitely
-                    timeline.repeat(-1);
-                }
-
-                // Attach event listeners to start cycling on hover for desktop
-                const profileImg = document.querySelector('.about-profile-img');
-                const statsButton = document.querySelector('.profile-hover-button');
-                const statsOverlay = document.querySelector('.profile-stats-overlay');
-
-                function showStats() {
-                    gsap.to(statsOverlay, {
-                        opacity: 1,
-                        duration: 0.3,
-                        ease: "power1.out"
-                    });
-                    if (!isCyclingStats) {
-                        cycleStats(); // Start cycling on first hover
-                    }
-                }
-
-                function hideStats() {
-                    gsap.to(statsOverlay, {
-                        opacity: 0,
-                        duration: 0.3,
-                        ease: "power1.out"
-                    });
-                }
-
-                profileImg.addEventListener('mouseenter', showStats);
-                profileImg.addEventListener('mouseleave', hideStats);
-
-                statsButton.addEventListener('mouseenter', showStats);
-                statsButton.addEventListener('mouseleave', hideStats);
-
-                // Automatically start cycling on mobile
-                function startCyclingIfMobile() {
-                    if (window.innerWidth <= 768 && !isCyclingStats) {
-                        gsap.to(statsOverlay, {
-                            opacity: 1,
-                            duration: 0.3,
-                            ease: "power1.out"
-                        });
-                        cycleStats();
-                    }
-                }
-
-                // Initial check
-                startCyclingIfMobile();
-
-                // Listen for resize events to handle orientation changes
-                window.addEventListener('resize', startCyclingIfMobile);
-            }
-
-            // Particle Effects
-            function createParticle(container) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                
-                const size = Math.random() * 4 + 2;
-                particle.style.width = `${size}px`;
-                particle.style.height = `${size}px`;
-                
-                particle.style.left = `${Math.random() * 100}%`;
-                particle.style.top = `${Math.random() * 100}%`;
-                
-                container.appendChild(particle);
-                
-                gsap.to(particle, {
-                    y: -500,
-                    x: Math.random() * 100 - 50,
-                    opacity: 0,
-                    duration: Math.random() * 3 + 2,
-                    ease: "power1.out",
-                    onComplete: () => particle.remove()
-                });
-            }
-
-            function createEnergyWave(x, y, container) {
-                const wave = document.createElement('div');
-                wave.className = 'energy-wave';
-                wave.style.left = `${x - 100}px`;
-                wave.style.top = `${y - 100}px`;
-                container.appendChild(wave);
-                
-                setTimeout(() => wave.remove(), 6000);
-            }
-
-            // Typing and Cycling for Infographics
-            const infographicData = [
-                { title: "Unity 2D & 3D Development", text: "Crafting immersive 2D and 3D game environments with Unity to deliver engaging user experiences." },
-                { title: "C# Programming", text: "Developing robust and scalable applications using C# to meet diverse project requirements." },
-                { title: "Blender 3D Modeling", text: "Creating detailed 3D models and animations with Blender to bring creative visions to life." },
-                { title: "Web Design with HTML", text: "Designing responsive and visually appealing websites using HTML to enhance online presence." },
-                { title: "Alpha Test Development in Unity", text: "Leading alpha testing phases in Unity to ensure high-quality and bug-free game releases." },
-                { title: "Content Creation", text: "Generating compelling digital content that resonates with audiences and drives engagement." },
-                { title: "Autodesk 3DsMax Certification", text: "Certified Autodesk 3DsMax user proficient in advanced 3D modeling and rendering techniques." },
-                { title: "Adobe Creative Suite Expertise", text: "Mastering Photoshop, After Effects, InDesign, Premiere Pro, and Audition for versatile multimedia projects." },
-                { title: "Digital Design & Branding", text: "Designing logos, page layouts, and custom templates to establish strong brand identities." },
-                { title: "Python & C# Development", text: "Leveraging Python and C# languages to build versatile software solutions and automate workflows." },
-                { title: "JavaScript Programming", text: "Implementing dynamic and interactive web functionalities using JavaScript." },
-                { title: "Google Cloud Console Management", text: "Managing and deploying scalable applications on Google Cloud Console for optimal performance." },
-                { title: "Streamlit Cloud Development", text: "Building interactive data applications with Streamlit Cloud to visualize and share insights effectively." },
-                { title: "Video Editing with Premiere Pro", text: "Editing high-quality videos using Premiere Pro to produce professional-grade multimedia content." },
-                { title: "AI-Assisted Development", text: "Integrating AI technologies to enhance development processes and create intelligent applications." },
-                { title: "Generative Art with AI Platforms", text: "Utilizing AI-assisted generative art platforms to produce unique and creative visual content." },
-                { title: "2D & 3D Animation", text: "Animating characters and scenes in both 2D and 3D to tell captivating stories." },
-                { title: "Character Rigging & Animation", text: "Rigging and animating characters to ensure fluid and lifelike movements in digital media." },
-                { title: "Project Management", text: "Coordinating cross-functional teams to deliver projects on time and exceed client expectations." },
-                { title: "Data Analysis", text: "Analyzing complex datasets to derive actionable insights and inform strategic decisions." }
+        function initializeProfileStats() {
+            const statsData = [
+                "Proficient in creating visually stunning graphics with a 95% client satisfaction rate, ensuring projects are delivered on time and exceed expectations.",
+                "Expert in development operations, improving workflow efficiency by 80% through innovative solutions and automation.",
+                "Specialized in game development with a 90% success rate in asset creation, enhancing user engagement and experience.",
+                "Skilled in asset creation and multimedia production, contributing to a 100% increase in project scalability and flexibility."
             ];
-
-            let currentInfographic = 0;
-            let infographicItems = [];
+            
+            const cycler = document.querySelector('.profile-stats-overlay .stats-cycler');
+            const paragraphs = cycler.querySelectorAll('.stat-paragraph');
+            let currentStatIndex = 0;
+            const totalStats = statsData.length;
 
             // Function to type text into an element using GSAP TextPlugin
-            function typeTextInfographic(element, text, speed = 0.05) { // Speed adjusted for fast typing
+            function typeText(element, text, speed = 0.05) { // Speed adjusted for fast typing
                 return gsap.to(element, {
                     duration: text.length * speed,
                     text: text,
                     ease: "none",
                     onStart: () => {
-                        element.style.opacity = '1';
+                        element.parentElement.classList.add('active');
                     }
                 });
             }
 
-            // Function to cycle through infographics
-            function cycleInfographics() {
-                if (infographicItems.length === 0) return;
+            // Function to cycle through stats sequentially
+            function cycleStats() {
+                if (isCyclingStats) return; // Prevent multiple cycles
+                isCyclingStats = true;
 
-                const timeline = gsap.timeline({ repeat: -1, repeatDelay: 1.5 });
+                const timeline = gsap.timeline({ repeat: -1 });
 
-                infographicData.forEach((item, index) => {
-                    const currentItem = infographicItems[index % infographicItems.length];
+                statsData.forEach((text, index) => {
+                    const currentParagraph = paragraphs[index % paragraphs.length];
                     timeline.call(() => {
-                        currentItem.classList.add('active');
-                        typeTextInfographic(currentItem.querySelector('h4'), item.title, 0.05);
-                        typeTextInfographic(currentItem.querySelector('.typing-text'), item.text, 0.05);
-                    });
-                    timeline.to({}, { duration: (item.title.length + item.text.length) * 0.05 + 1.5 }); // Wait for typing and display duration
+                        typeText(currentParagraph.querySelector('p'), text, 0.05);
+                    }, null, `+=0.5`); // Delay before starting each paragraph
+                    timeline.to({}, { duration: text.length * 0.05 + 1.5 }); // Wait for typing and display duration
                     timeline.call(() => {
-                        currentItem.classList.remove('active');
-                        currentItem.querySelector('h4').textContent = '';
-                        currentItem.querySelector('.typing-text').textContent = '';
-                    });
+                        currentParagraph.classList.remove('active');
+                        currentParagraph.querySelector('p').textContent = '';
+                    }, null);
+                });
+
+                // Repeat the cycle infinitely
+                timeline.repeat(-1);
+            }
+
+            // Attach event listeners to start cycling on hover for desktop
+            const profileImg = document.querySelector('.about-profile-img');
+            const statsButton = document.querySelector('.profile-hover-button');
+            const statsOverlay = document.querySelector('.profile-stats-overlay');
+
+            function showStats() {
+                gsap.to(statsOverlay, {
+                    opacity: 1,
+                    duration: 0.3,
+                    ease: "power1.out"
+                });
+                if (!isCyclingStats) {
+                    cycleStats(); // Start cycling on first hover
+                }
+            }
+
+            function hideStats() {
+                gsap.to(statsOverlay, {
+                    opacity: 0,
+                    duration: 0.3,
+                    ease: "power1.out"
                 });
             }
 
-            // Function to dynamically create infographic items
-            function createInfographicItems() {
-                const infographicContainer = document.querySelector('.infographic');
-                infographicContainer.innerHTML = ''; // Clear existing items
-                infographicItems = []; // Reset the array
+            profileImg.addEventListener('mouseenter', showStats);
+            profileImg.addEventListener('mouseleave', hideStats);
 
-                infographicData.forEach((item, index) => {
-                    const infographicItem = document.createElement('div');
-                    infographicItem.className = 'infographic-item';
-                    infographicItem.innerHTML = `
-                        <h4></h4>
-                        <p class="typing-text"></p>
-                    `;
-                    infographicContainer.appendChild(infographicItem);
-                    infographicItems.push(infographicItem);
+            statsButton.addEventListener('mouseenter', showStats);
+            statsButton.addEventListener('mouseleave', hideStats);
+
+            // Automatically start cycling on mobile
+            function startCyclingIfMobile() {
+                if (window.innerWidth <= 768 && !isCyclingStats) {
+                    gsap.to(statsOverlay, {
+                        opacity: 1,
+                        duration: 0.3,
+                        ease: "power1.out"
+                    });
+                    cycleStats();
+                }
+            }
+
+            // Initial check
+            startCyclingIfMobile();
+
+            // Listen for resize events to handle orientation changes
+            window.addEventListener('resize', startCyclingIfMobile);
+        }
+
+        // Particle Effects
+        function createParticle(container) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            
+            const size = Math.random() * 4 + 2;
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+            
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.top = `${Math.random() * 100}%`;
+            
+            container.appendChild(particle);
+            
+            gsap.to(particle, {
+                y: -500,
+                x: Math.random() * 100 - 50,
+                opacity: 0,
+                duration: Math.random() * 3 + 2,
+                ease: "power1.out",
+                onComplete: () => particle.remove()
+            });
+        }
+
+        function createEnergyWave(x, y, container) {
+            const wave = document.createElement('div');
+            wave.className = 'energy-wave';
+            wave.style.left = `${x - 100}px`;
+            wave.style.top = `${y - 100}px`;
+            container.appendChild(wave);
+            
+            setTimeout(() => wave.remove(), 6000);
+        }
+
+        // Typing and Cycling for Infographics
+        const infographicData = [
+            { title: "Unity 2D & 3D Development", text: "Crafting immersive 2D and 3D game environments with Unity to deliver engaging user experiences." },
+            { title: "C# Programming", text: "Developing robust and scalable applications using C# to meet diverse project requirements." },
+            { title: "Blender 3D Modeling", text: "Creating detailed 3D models and animations with Blender to bring creative visions to life." },
+            { title: "Web Design with HTML", text: "Designing responsive and visually appealing websites using HTML to enhance online presence." },
+            { title: "Alpha Test Development in Unity", text: "Leading alpha testing phases in Unity to ensure high-quality and bug-free game releases." },
+            { title: "Content Creation", text: "Generating compelling digital content that resonates with audiences and drives engagement." },
+            { title: "Autodesk 3DsMax Certification", text: "Certified Autodesk 3DsMax user proficient in advanced 3D modeling and rendering techniques." },
+            { title: "Adobe Creative Suite Expertise", text: "Mastering Photoshop, After Effects, InDesign, Premiere Pro, and Audition for versatile multimedia projects." },
+            { title: "Digital Design & Branding", text: "Designing logos, page layouts, and custom templates to establish strong brand identities." },
+            { title: "Python & C# Development", text: "Leveraging Python and C# languages to build versatile software solutions and automate workflows." },
+            { title: "JavaScript Programming", text: "Implementing dynamic and interactive web functionalities using JavaScript." },
+            { title: "Google Cloud Console Management", text: "Managing and deploying scalable applications on Google Cloud Console for optimal performance." },
+            { title: "Streamlit Cloud Development", text: "Building interactive data applications with Streamlit Cloud to visualize and share insights effectively." },
+            { title: "Video Editing with Premiere Pro", text: "Editing high-quality videos using Premiere Pro to produce professional-grade multimedia content." },
+            { title: "AI-Assisted Development", text: "Integrating AI technologies to enhance development processes and create intelligent applications." },
+            { title: "Generative Art with AI Platforms", text: "Utilizing AI-assisted generative art platforms to produce unique and creative visual content." },
+            { title: "2D & 3D Animation", text: "Animating characters and scenes in both 2D and 3D to tell captivating stories." },
+            { title: "Character Rigging & Animation", text: "Rigging and animating characters to ensure fluid and lifelike movements in digital media." },
+            { title: "Project Management", text: "Coordinating cross-functional teams to deliver projects on time and exceed client expectations." },
+            { title: "Data Analysis", text: "Analyzing complex datasets to derive actionable insights and inform strategic decisions." }
+        ];
+
+        let currentInfographic = 0;
+        let infographicItems = [];
+
+        // Function to type text into an element using GSAP TextPlugin
+        function typeTextInfographic(element, text, speed = 0.05) { // Speed adjusted for fast typing
+            return gsap.to(element, {
+                duration: text.length * speed,
+                text: text,
+                ease: "none",
+                onStart: () => {
+                    element.style.opacity = '1';
+                }
+            });
+        }
+
+        // Function to cycle through infographics
+        function cycleInfographics() {
+            if (infographicItems.length === 0) return;
+
+            const timeline = gsap.timeline({ repeat: -1, repeatDelay: 1.5 });
+
+            infographicData.forEach((item, index) => {
+                const currentItem = infographicItems[index % infographicItems.length];
+                timeline.call(() => {
+                    currentItem.classList.add('active');
+                    typeTextInfographic(currentItem.querySelector('h4'), item.title, 0.05);
+                    typeTextInfographic(currentItem.querySelector('.typing-text'), item.text, 0.05);
+                });
+                timeline.to({}, { duration: (item.title.length + item.text.length) * 0.05 + 1.5 }); // Wait for typing and display duration
+                timeline.call(() => {
+                    currentItem.classList.remove('active');
+                    currentItem.querySelector('h4').textContent = '';
+                    currentItem.querySelector('.typing-text').textContent = '';
+                });
+            });
+        }
+
+        // Function to dynamically create infographic items
+        function createInfographicItems() {
+            const infographicContainer = document.querySelector('.infographic');
+            infographicContainer.innerHTML = ''; // Clear existing items
+            infographicItems = []; // Reset the array
+
+            infographicData.forEach((item, index) => {
+                const infographicItem = document.createElement('div');
+                infographicItem.className = 'infographic-item';
+                infographicItem.innerHTML = `
+                    <h4></h4>
+                    <p class="typing-text"></p>
+                `;
+                infographicContainer.appendChild(infographicItem);
+                infographicItems.push(infographicItem);
+            });
+        }
+
+        // Initialize Particles
+        function startParticles() {
+            const particlesContainers = document.querySelectorAll('.particles-container');
+            particlesContainers.forEach(container => {
+                setInterval(() => createParticle(container), 100); // Increased frequency
+            });
+        }
+
+        // Function to generate random star shapes
+        function generateRandomStar() {
+            const stars = ['★', '☆', '✩', '✪', '✫', '✬', '✭', '✮', '✯'];
+            return stars[Math.floor(Math.random() * stars.length)];
+        }
+
+        // Function to display multiple random stars with random color
+        function displayRandomJapaneseChars(count = 4) { // Increased count from 2 to 4
+            const darkSection = document.querySelector('.dark-theme-section');
+            const stars = ['★', '☆', '✩', '✪', '✫', '✬', '✭', '✮', '✯'];
+
+            for(let i = 0; i < count; i++) {
+                const star = stars[Math.floor(Math.random() * stars.length)];
+                const randomStarElem = document.createElement('span');
+                randomStarElem.className = 'random-char';
+
+                // Randomly assign one of the three colors
+                const colors = ['white', 'red', 'blue'];
+                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                randomStarElem.classList.add(randomColor);
+
+                randomStarElem.textContent = star;
+
+                // Random position within the dark-theme-section
+                const x = Math.random() * 100;
+                const y = Math.random() * 100;
+
+                randomStarElem.style.left = `${x}%`;
+                randomStarElem.style.top = `${y}%`;
+
+                darkSection.appendChild(randomStarElem);
+
+                // Remove the star after animation completes
+                randomStarElem.addEventListener('animationend', () => {
+                    randomStarElem.remove();
                 });
             }
+        }
+
+        // Initialize Everything
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize Matrix
+            createMatrixBackground();
+            setInterval(() => {
+                const columns = document.querySelectorAll('.matrix-column');
+                columns.forEach(column => {
+                    if (Math.random() < 0.01) { // 1% chance per column to glow a character
+                        const randomCharIndex = Math.floor(Math.random() * 100);
+                        const char = column.childNodes[randomCharIndex];
+                        if (char) {
+                            char.classList.add('glow');
+                            setTimeout(() => char.classList.remove('glow'), 1000);
+                        }
+                    }
+                });
+            }, 100);
+
+            // Initialize Anime Background
+            createAnimeBackground();
+
+            // Initialize Profile Stats
+            initializeProfileStats();
+
+            // GSAP Animations for Titles
+            gsap.to('.title', {
+                opacity: 1,
+                duration: 1,
+                delay: 0.5
+            });
+
+            gsap.to('.subtitle', {
+                opacity: 1,
+                duration: 1,
+                delay: 0.8
+            });
+
+            // Skill Icons Animation
+            const skillIcons = document.querySelectorAll('.skill-icon');
+            skillIcons.forEach((icon, index) => {
+                gsap.to(icon, {
+                    opacity: 1,
+                    scale: 1,
+                    duration: 0.5,
+                    delay: 1.2 + (index * 0.05), // Slightly faster stagger
+                    ease: "back.out(1.7)"
+                });
+            });
+
+            // Section Animations with ScrollTrigger
+            const sections = document.querySelectorAll('.section');
+            sections.forEach((section, index) => {
+                gsap.to(section, {
+                    scrollTrigger: {
+                        trigger: section,
+                        start: "top 80%",
+                        toggleActions: "play none none none"
+                    },
+                    opacity: 1,
+                    duration: 1,
+                    delay: 0.2 * index
+                });
+            });
+
+            // Create infographic items
+            createInfographicItems();
+
+            // Start Infographics Cycling
+            cycleInfographics();
 
             // Initialize Particles
-            function startParticles() {
+            startParticles();
+
+            // Start displaying random stars
+            setInterval(() => displayRandomJapaneseChars(4), 150); // Increased stars and frequency
+
+            // Window Resize Handler
+            window.addEventListener('resize', () => {
+                createMatrixBackground();
+                const animeContainer = document.querySelector('.anime-background');
+                animeContainer.innerHTML = '';
+                createAnimeBackground();
+            });
+
+            // Mouse Movement Handler
+            document.addEventListener('mousemove', (e) => {
                 const particlesContainers = document.querySelectorAll('.particles-container');
                 particlesContainers.forEach(container => {
-                    setInterval(() => createParticle(container), 100); // Increased frequency
-                });
-            }
-
-            // Function to generate random star shapes
-            function generateRandomStar() {
-                const stars = ['★', '☆', '✩', '✪', '✫', '✬', '✭', '✮', '✯'];
-                return stars[Math.floor(Math.random() * stars.length)];
-            }
-
-            // Function to display multiple random stars with random color
-            function displayRandomJapaneseChars(count = 4) { // Increased count from 2 to 4
-                const darkSection = document.querySelector('.dark-theme-section');
-                const stars = ['★', '☆', '✩', '✪', '✫', '✬', '✭', '✮', '✯'];
-
-                for(let i = 0; i < count; i++) {
-                    const star = stars[Math.floor(Math.random() * stars.length)];
-                    const randomStarElem = document.createElement('span');
-                    randomStarElem.className = 'random-char';
-
-                    // Randomly assign one of the three colors
-                    const colors = ['white', 'red', 'blue'];
-                    const randomColor = colors[Math.floor(Math.random() * colors.length)];
-                    randomStarElem.classList.add(randomColor);
-
-                    randomStarElem.textContent = star;
-
-                    // Random position within the dark-theme-section
-                    const x = Math.random() * 100;
-                    const y = Math.random() * 100;
-
-                    randomStarElem.style.left = `${x}%`;
-                    randomStarElem.style.top = `${y}%`;
-
-                    darkSection.appendChild(randomStarElem);
-
-                    // Remove the star after animation completes
-                    randomStarElem.addEventListener('animationend', () => {
-                        randomStarElem.remove();
-                    });
-                }
-            }
-
-            // Initialize Everything
-            document.addEventListener('DOMContentLoaded', () => {
-                // Initialize Matrix
-                createMatrixBackground();
-                setInterval(() => {
-                    const columns = document.querySelectorAll('.matrix-column');
-                    columns.forEach(column => {
-                        if (Math.random() < 0.01) { // 1% chance per column to glow a character
-                            const randomCharIndex = Math.floor(Math.random() * 100);
-                            const char = column.childNodes[randomCharIndex];
-                            if (char) {
-                                char.classList.add('glow');
-                                setTimeout(() => char.classList.remove('glow'), 1000);
-                            }
+                    const rect = container.getBoundingClientRect();
+                    if (e.clientY >= rect.top && e.clientY <= rect.bottom) {
+                        if (Math.random() < 0.3) { // Increased chance for more energy waves
+                            const x = e.clientX - rect.left;
+                            const y = e.clientY - rect.top;
+                            createEnergyWave(x, y, container);
                         }
-                    });
-                }, 100);
-
-                // Initialize Anime Background
-                createAnimeBackground();
-
-                // Initialize Profile Stats
-                initializeProfileStats();
-
-                // GSAP Animations for Titles
-                gsap.to('.title', {
-                    opacity: 1,
-                    duration: 1,
-                    delay: 0.5
-                });
-
-                gsap.to('.subtitle', {
-                    opacity: 1,
-                    duration: 1,
-                    delay: 0.8
-                });
-
-                // Skill Icons Animation
-                const skillIcons = document.querySelectorAll('.skill-icon');
-                skillIcons.forEach((icon, index) => {
-                    gsap.to(icon, {
-                        opacity: 1,
-                        scale: 1,
-                        duration: 0.5,
-                        delay: 1.2 + (index * 0.05), // Slightly faster stagger
-                        ease: "back.out(1.7)"
-                    });
-                });
-
-                // Section Animations with ScrollTrigger
-                const sections = document.querySelectorAll('.section');
-                sections.forEach((section, index) => {
-                    gsap.to(section, {
-                        scrollTrigger: {
-                            trigger: section,
-                            start: "top 80%",
-                            toggleActions: "play none none none"
-                        },
-                        opacity: 1,
-                        duration: 1,
-                        delay: 0.2 * index
-                    });
-                });
-
-                // Create infographic items
-                createInfographicItems();
-
-                // Start Infographics Cycling
-                cycleInfographics();
-
-                // Initialize Particles
-                startParticles();
-
-                // Start displaying random stars
-                setInterval(() => displayRandomJapaneseChars(4), 150); // Increased stars and frequency
-
-                // Window Resize Handler
-                window.addEventListener('resize', () => {
-                    createMatrixBackground();
-                    const animeContainer = document.querySelector('.anime-background');
-                    animeContainer.innerHTML = '';
-                    createAnimeBackground();
-                });
-
-                // Mouse Movement Handler
-                document.addEventListener('mousemove', (e) => {
-                    const particlesContainers = document.querySelectorAll('.particles-container');
-                    particlesContainers.forEach(container => {
-                        const rect = container.getBoundingClientRect();
-                        if (e.clientY >= rect.top && e.clientY <= rect.bottom) {
-                            if (Math.random() < 0.3) { // Increased chance for more energy waves
-                                const x = e.clientX - rect.left;
-                                const y = e.clientY - rect.top;
-                                createEnergyWave(x, y, container);
-                            }
-                        }
-                    });
-                });
-
-                // Typed-in Effect for Summary Paragraphs
-                const aboutContent = document.querySelectorAll('.about-content p');
-                const paragraphs = Array.from(aboutContent);
-                let currentParagraphIndex = 0;
-
-                // Function to type text into a paragraph and return a Promise
-                function typeParagraph(para, fullText, speed = 0.01) {
-                    return new Promise((resolve) => {
-                        para.textContent = ''; // Clear existing text
-                        gsap.to(para, {
-                            duration: fullText.length * speed,
-                            text: fullText,
-                            ease: "none",
-                            onStart: () => {
-                                para.style.opacity = '1';
-                            },
-                            onComplete: resolve
-                        });
-                    });
-                }
-
-                // Type the first paragraph and then show the button
-                const firstParagraph = paragraphs[0];
-                const firstText = firstParagraph.getAttribute('data-text');
-                typeParagraph(firstParagraph, firstText, 0.01).then(() => {
-                    const moreBtn = document.getElementById('more-btn');
-                    moreBtn.style.display = 'inline-block'; // Show the button
-                    gsap.fromTo(moreBtn, { opacity: 0 }, { opacity: 1, duration: 0.5, delay: 0.2 });
-                });
-
-                // Handle the "Want to know more?" button click
-                const moreButton = document.getElementById('more-btn');
-                moreButton.addEventListener('click', async () => {
-                    // Hide the button with a fade-out effect
-                    gsap.to(moreButton, { opacity: 0, duration: 0.3 });
-                    setTimeout(() => {
-                        moreButton.style.display = 'none'; // Hide the button after fade-out
-                    }, 300);
-
-                    // Type the remaining paragraphs sequentially
-                    for(let i = 1; i < paragraphs.length; i++) {
-                        const para = paragraphs[i];
-                        const fullText = para.getAttribute('data-text');
-                        await typeParagraph(para, fullText, 0.01);
                     }
                 });
             });
-        </script>
 
-        <script>
-            // Hamburger Menu Toggle
-            const hamburger = document.getElementById('hamburger');
-            const navLinks = document.getElementById('nav-links');
+            // Typed-in Effect for Summary Paragraphs
+            const aboutContent = document.querySelectorAll('.about-content p');
+            const paragraphs = Array.from(aboutContent);
+            let currentParagraphIndex = 0;
 
-            hamburger.addEventListener('click', () => {
-                hamburger.classList.toggle('active');
-                navLinks.classList.toggle('active');
-            });
-
-            // Smooth Scrolling for Navigation Links
-            document.querySelectorAll('.nav-links a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    target.scrollIntoView({ behavior: 'smooth' });
-
-                    // Close the menu after clicking a link
-                    hamburger.classList.remove('active');
-                    navLinks.classList.remove('active');
+            // Function to type text into a paragraph and return a Promise
+            function typeParagraph(para, fullText, speed = 0.01) {
+                return new Promise((resolve) => {
+                    para.textContent = ''; // Clear existing text
+                    gsap.to(para, {
+                        duration: fullText.length * speed,
+                        text: fullText,
+                        ease: "none",
+                        onStart: () => {
+                            para.style.opacity = '1';
+                        },
+                        onComplete: resolve
+                    });
                 });
+            }
+
+            // Type the first paragraph and then show the button
+            const firstParagraph = paragraphs[0];
+            const firstText = firstParagraph.getAttribute('data-text');
+            typeParagraph(firstParagraph, firstText, 0.01).then(() => {
+                const moreBtn = document.getElementById('more-btn');
+                moreBtn.style.display = 'inline-block'; // Show the button
+                gsap.fromTo(moreBtn, { opacity: 0 }, { opacity: 1, duration: 0.5, delay: 0.2 });
             });
-        </script>
-    </body>
+
+            // Handle the "Want to know more?" button click
+            const moreButton = document.getElementById('more-btn');
+            moreButton.addEventListener('click', async () => {
+                // Hide the button with a fade-out effect
+                gsap.to(moreButton, { opacity: 0, duration: 0.3 });
+                setTimeout(() => {
+                    moreButton.style.display = 'none'; // Hide the button after fade-out
+                }, 300);
+
+                // Type the remaining paragraphs sequentially
+                for(let i = 1; i < paragraphs.length; i++) {
+                    const para = paragraphs[i];
+                    const fullText = para.getAttribute('data-text');
+                    await typeParagraph(para, fullText, 0.01);
+                }
+            });
+        });
+    </script>
+
+    <script>
+        // Hamburger Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('.nav-links a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+
+                // Close the menu after clicking a link
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
 </html>
